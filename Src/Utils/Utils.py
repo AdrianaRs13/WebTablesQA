@@ -13,10 +13,10 @@ class Utils(WebDriverSetup):
 
     def waitUntilElementIsPresent(WebElement):
         status = False
-        time.sleep(5)
+        time.sleep(4)
         while status:
             WebElement.is_enabled() and WebElement.is_displayed()
-            time.sleep(5)
+            time.sleep(4)
         return
 
 # class validateModal():
