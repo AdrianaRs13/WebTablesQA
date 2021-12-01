@@ -12,3 +12,10 @@ class webTable(object):
     modal = "//div[@role='dialog']"
     input_name = "//input[@id='firstName']"
     submit_button = "//button[@id='submit']"
+
+class textBox(object):
+    full_name = "#userName"
+    email = "#userEmail"
+    current_address = "#currentAddress"
+    permanent_address = "#permanentAddress"
+

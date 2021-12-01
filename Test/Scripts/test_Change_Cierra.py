@@ -13,7 +13,6 @@ from Search.Src.PageObject.Pages.WebTablesPage import WebTablesPage
 from Search.Src.Utils.Utils import Utils
 from Search.Src.PageObject.Locators import *
 
-
 class Change_Cierra(WebDriverSetup):
 
     def test_CierraName(self):

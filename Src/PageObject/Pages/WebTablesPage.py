@@ -15,6 +15,7 @@ class WebTablesPage(object):
         # self.input_name = driver.find_element(By.XPATH, webTable.input_name)
         # self.submit_button = driver.find_element(By.XPATH, webTable.submit_button)
 
+
     def getSearchText(self):
         return self.search_text
 
