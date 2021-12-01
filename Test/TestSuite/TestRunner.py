@@ -10,6 +10,9 @@ from Search.Test.Scripts.test_Home_Page import Google_HomePage
 from Search.Test.Scripts.test_Google_Search import Google_Search
 from Search.Test.Scripts.test_Change_Cierra import Change_Cierra
 from Search.Test.Scripts.test_Submit_Data import Submit_Data
+from Search.Test.Scripts.test_Modals import Modals_SM
+from Search.Test.Scripts.test_Add_NewRecord import New_Record
+
 
 import testtools as testtools
 
@@ -21,6 +24,8 @@ if __name__ == "__main__":
         #test_loader.loadTestsFromTestCase(Google_Search),
         test_loader.loadTestsFromTestCase(Change_Cierra),
         test_loader.loadTestsFromTestCase(Submit_Data),
+        test_loader.loadTestsFromTestCase(Modals_SM),
+        test_loader.loadTestsFromTestCase(New_Record)
     ))
 
     test_runner = TextTestRunner(verbosity=2)

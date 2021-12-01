@@ -11,6 +11,7 @@ class WebTablesPage(object):
         self.edit_button = driver.find_element(By.CSS_SELECTOR, webTable.edit_button)
         self.cierra_name = driver.find_element(By.XPATH, webTable.cierra_name)
         self.search_text = driver.find_element(By.XPATH, webTable.search_text)
+        self.add_button = driver.find_element(By.CSS_SELECTOR, webTable.add_button)
         # self.modal = driver.find_element(By.XPATH, webTable.modal)
         # self.input_name = driver.find_element(By.XPATH, webTable.input_name)
         # self.submit_button = driver.find_element(By.XPATH, webTable.submit_button)
@@ -36,3 +37,6 @@ class WebTablesPage(object):
 
     def getElement(self, strSelector):
         return self.driver.find_element(By.XPATH, strSelector)
+
+    def getElementCSS(self, strSelector):
+        return self.driver.find_element(By.CSS_SELECTOR, strSelector)

@@ -12,6 +12,7 @@ from Search.Src.TestBase.WebDriverSetup import WebDriverSetup
 from Search.Src.PageObject.Pages.TextBox import TextBox
 from Search.Src.Utils.Utils import Utils
 from Search.Src.PageObject.Locators import *
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class Submit_Data(WebDriverSetup):
@@ -30,9 +31,9 @@ class Submit_Data(WebDriverSetup):
         home.add_email.send_keys(email)
         home.add_currentAddress.send_keys(caddress)
         home.add_permanentAddress.send_keys(paddress)
-
         Utils.waitUntilElementIsPresent(home.add_permanentAddress)
 
+        driver.execute_script("arguments[0].scrollIntoView();", home.submit_button)
         home.submit_button.click()
 
         self.assertEqual(home.getElement(textBox.v_full_name).text, 'Name:' + name, "Name OK")
