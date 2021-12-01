@@ -7,7 +7,7 @@ class Utils(WebDriverSetup):
     def page_is_loading(driver):
         bstatus = False
         while bstatus:
-            time.sleep(3500)
+            time.sleep(3.5)
             domStatus = driver.execute_script("return document.readyState")
             bstatus = "complete" in domStatus
 

@@ -18,4 +18,9 @@ class textBox(object):
     email = "#userEmail"
     current_address = "#currentAddress"
     permanent_address = "#permanentAddress"
+    submit_button = "#submit"
+    v_full_name = "//p[@id='name']"
+    v_email = "//p[@id='email']"
+    v_current_address = "//p[@id='currentAddress']"
+    v_permanent_address = "//p[@id='permanentAddress']"
 
